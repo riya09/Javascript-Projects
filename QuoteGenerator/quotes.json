@@ -1,0 +1,43 @@
+{
+    "quote_maker": [
+    {
+        "writer":"George R. R. Martin",
+        "words":[
+            "Never forget what you are, for surely the world will not. Make it your strength. Then it can never be your weakness. Armour yourself in it, and it will never be used to hurt you.",
+            "When the snows fall and the white winds blow, the lone wolf dies but the pack survives.",
+            "Once you’ve accepted your flaws, no one can use them against you.",
+            "A good act does not wash out the bad, nor a bad act the good. Each should have its own reward."
+        ]
+    },
+    {
+        "writer":"J.K. Rowling",
+        "words":[
+            "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all, in which case you have failed by default.",
+            "Anything's possible if you've got enough nerve.",
+            "You control your own life.Your own will is extremely powerful.",
+            "As is a tale, so is life: not how long it is, but how good it is, is what matters.",
+            "We do not need magic to change the world, we carry all the power we need inside ourselves already: we have the power to imagine better.",
+            "Whatever money you might have, self-worth really lies in finding out what you do best.",
+            "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light."
+        ]
+    },
+    {
+       "writer":"Roald Dahl" ,
+        "words":[
+            "It doesn't matter who you are or what you look like, so long as somebody loves you.",
+            "A person who has good thoughts cannot ever be ugly. You can have a wonky nose and a crooked mouth and a double chin and stick-out teeth, but if you have good thoughts it will shine out of your face like sunbeams and you will always look lovely.",
+            "It's a funny thing about mothers and fathers. Even when their own child is the most disgusting little blister you could ever imagine, they still think that he or she is wonderful.",
+            "So, please, oh please, we beg, we pray, go throw your TV set away, and in its place you can install, a lovely bookcase on the wall."
+        ]
+    },
+    {
+        "writer":"Richard Feynmann",
+        "words":[
+            "Nobody ever figures out what life is all about, and it doesn't matter. Explore the world. Nearly everything is really interesting if you go into it deeply enough.",
+            "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.",
+            "The highest forms of understanding we can achieve are laughter and human compassion.",
+            "All the time you're saying to yourself, 'I could do that, but I won't,' — which is just another way of saying that you can't."
+        ]
+    }
+    ]
+}
