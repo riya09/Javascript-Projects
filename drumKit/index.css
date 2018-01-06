@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.keys{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem;
+}
+.key{
+    flex-grow: 1;
+    width: 10rem;
+    border:0.4rem solid black;
+    border-radius: 0.5rem;
+    margin:1rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+.sound-name{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+kbd{
+    display: block;
+    font-size: 1.25rem;
+}
