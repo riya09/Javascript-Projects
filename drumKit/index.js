@@ -33,3 +33,12 @@ window.addEventListener('keyup',function(e){
     pressed[e.keyCode]=false;
     //console.log(pressed[this.dataset.key]);
 });
+//click events for each key
+keys.forEach(k => k.addEventListener('click',function(){
+    var g=this.dataset.key;
+    const audio = document.querySelector(`audio[data-key="${g}"]`);
+    console.log(audio);
+    audio.currentTime=0;
+    audio.play();
+    this.classList.add('playing');
+}));
