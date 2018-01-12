@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Walk</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="mycanvas"></canvas>
+        <script>
+            var canvas = document.getElementById('mycanvas'),
+                w=canvas.width = window.innerWidth,
+                h=canvas.height = window.innerHeight,
+                ctx = canvas.getContext('2d');
+            function Walker(x,y){
+                this.x=x;
+                this.y=y;
+                this.draw=function(){
+                      ctx.fillStyle='red';
+		              ctx.fillRect(this.x,this.y,2,2);
+                }
+                this.move=function(){
+                    var choosex=Math.floor(Math.random()*3)-1;
+                    var choosey=Math.floor(Math.random()*3)-1;
+                    this.x+=choosex;
+                    this.y+=choosey;
+                }
+            }
+            var w=new Walker(w/2,h/2);
+            function update(){
+                w.draw();
+                w.move();
+                requestAnimationFrame(update);
+            }
+            update();
+        </script>
+    </body>
+</html>
