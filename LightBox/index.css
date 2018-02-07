@@ -9,24 +9,27 @@ h1{
     font-family: sans-serif;
 }
 .container{
-    width:85%;
+    width:80%;
     margin: 0 auto;
-    padding-top: 3%;
+    padding-top: 5%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    text-align: center;
 }
 .col{
     flex: auto;
     width: calc(100%/4);
-    height: 150px;
-    padding: 5px;
+    height: 200px;
+    padding-top: 2%;
+}
+.col:hover{
+    cursor: pointer;
 }
 .col img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 500px;
+    max-height: 500px;
     vertical-align: middle;
-    
 }
 .modal{
     display: none;
@@ -37,7 +40,7 @@ h1{
     height: 100%;
     display: block;
     z-index: 2;
-    position: fixed;
+    position: absolute;
     top:0;
     background: rgba(0, 0, 0, 0.85);
     animation-name:zoom;
@@ -47,14 +50,17 @@ h1{
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
-
 .content{
     width: 75%;
+    height: 98%;
     margin: 0 auto;
-    
+    text-align: center;    
 }
 .content img{
+    display: block;
+    margin: auto auto;
     max-width: 100%;
+    max-height: 100%;
 }
 .close{
     position: absolute;
@@ -72,7 +78,9 @@ h1{
     position: absolute;
     margin:0 auto;
     top:40%;
+    cursor: pointer;
 }
+
 .next{
     right: 0;
     background-image: url(images/next.png);
@@ -80,7 +88,7 @@ h1{
     background-size: contain;
 }
 .prev{
-    left: 0;
+    left: 2%;
     background-image: url(images/prev.png);
     background-repeat: no-repeat;
     background-size: contain;
