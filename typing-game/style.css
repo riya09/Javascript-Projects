@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+h4 {
+    color: #53a1a3;
+    font-size: 38px;
+
+}
+
+p {
+    color: #53a1a3;
+    font-size: 32px;
+}
+
+body {
+    background: #0d3d43;
+}
+
+.container {
+    padding: 5%;
+    width: 100%;
+}
+
+.intro {
+    padding-top: 50px;
+}
+
+.stage {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.button,
+input {
+    padding: 1%;
+    border: 0 none;
+    border-radius: 100px;
+}
+
+.button {
+    background: #1ad0bb;
+    color: #fff;
+    width: 30%;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 3%;
+    box-shadow: 2px 5px 10px #150f0f;
+}
+
+.input {
+    width: 40%;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5%;
+}
+
+.input:focus {
+    border: 5px solid #59a3d9;
+}
+
+.visibile {
+    visibility: visible;
+    display: inline-block;
+    opacity: 0;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.timer,
+.score {
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 480px) {
+    .stage {
+        width: 100%;
+        font-size: 50%;
+    }
+    .button,
+    .input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .stage {
+        width: 100%;
+        font-size: 50%;
+    }
+    .input {
+        width: 80%;
+    }
+    .button {
+        width: 40%;
+    }
+}
