@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Modal window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="press-me">Press Me</button>
+        <div class="modal hide-modal">
+            <h3>Welcome</h3>
+            <p>This is a modal window</p>
+            <a href="#" class="close">&times;</a>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector('.press-me');
+        const close = document.querySelector('.close');
+        const modal = document.querySelector('.modal');
+        button.addEventListener('click',function(){
+            modal.classList.add('show-modal');
+            modal.classList.remove('hide-modal');
+
+        })
+        close.addEventListener('click',function(){
+            modal.classList.remove('show-modal');
+            modal.classList.add('hide-modal');
+        })
+    </script>
+</body>
+</html>
