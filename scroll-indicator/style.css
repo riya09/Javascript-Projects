@@ -1,0 +1,31 @@
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  position:fixed;
+  top:0;
+  left:0px;
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid #ccc;
+  font-family: sans-serif;
+}
+header h1{
+  padding-left:12px;
+}
+.scroll-line{
+  height:5px;
+  width:0%;
+  margin-bottom:-2px;
+  background:lightcoral;
+}
+.container{
+  width:80%;
+  padding:100px 0;
+  margin:0 auto;
+}
+.content p{
+  font-size:24px;
+}
