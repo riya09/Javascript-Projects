@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.container{
+  margin:5rem auto;
+  width:70%;
+}
+.shape{
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
+  display:inline-block;
+}
+.square {
+  background: lightseagreen;
+}
+.circle {
+  border-radius: 10rem;
+  background: crimson;
+}
+.triangle{
+  width:0;
+  height:0;
+  border-right:5rem solid transparent;
+  border-left:5rem solid transparent;
+  border-bottom:10rem solid lightgreen;
+}
+input[type="radio"]{
+  display:none;
+}
+.filter{
+  background:yellow;
+  margin:2rem;
+}
+label{
+  font-size: 2rem;
+  margin:1rem;
+  padding:1rem;
+  background:white;
+  border:0.2rem solid lightblue;
+  text-align:center;
+}
+input[id="square"]:checked ~ .container .shape:not([data-category *= "Square"]){
+  display:none;
+  width:0;
+}
+input[id="circle"]:checked ~ .container .shape:not([data-category *= "Circle"]){
+  width:0;
+  display:none;
+}
+input[id="triangle"]:checked ~ .container .shape:not([data-category *= "Triangle"]){
+  width:0;
+  display:none;
+}
+input[id="all"]:checked ~ .container .shape([data-category]){
+  display:block;
+}
+input[id="all"]:checked ~ label[for="all"],input[id="square"]:checked ~ label[for="square"],input[id="circle"]:checked ~ label[for="circle"],input[id="triangle"]:checked ~ label[for="triangle"]{
+  background:lightblue;
+  color:white;
+}
