@@ -1,9 +1,10 @@
 {
-  "homepage":"https://riya09.github.io/JavaScript-Projects/pop-quiz/",
+  "homepage": "https://riya09.github.io/JavaScript-Projects/pop-quiz/",
   "name": "pop-quiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
