@@ -8,14 +8,16 @@ generate_gif = function() {
       return response.json();
     })
     .then(function(giphy) {
-      console.log(giphy.data.images.original.url);
       img_id.src = giphy.data.images.original.url;
+      document.querySelector('.loader').style.display="none";
     })
     .catch(function(error) {
       console.log(error);
     });
 };
-generate_gif();
+window.addEventListener('load',function(){
+  generate_gif();
+})
 document.querySelector('.generator').addEventListener('click',function(){
   generate_gif();
 })
